@@ -1,4 +1,4 @@
-package com.iesam.carnejoven.features.user;
+package com.iesam.carnejoven.features.user.domain;
 
 public class User {
     private final String nif;

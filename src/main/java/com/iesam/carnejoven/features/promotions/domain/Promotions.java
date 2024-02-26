@@ -1,4 +1,4 @@
-package com.iesam.carnejoven.features.promotions;
+package com.iesam.carnejoven.features.promotions.domain;
 
 public class Promotions {
     private final String id;

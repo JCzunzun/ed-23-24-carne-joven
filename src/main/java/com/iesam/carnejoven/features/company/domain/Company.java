@@ -1,4 +1,4 @@
-package com.iesam.carnejoven.features.company;
+package com.iesam.carnejoven.features.company.domain;
 
 public class Company {
     private final String id;

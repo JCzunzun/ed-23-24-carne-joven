@@ -1,7 +1,7 @@
-package com.iesam.carnejoven.features.buy;
+package com.iesam.carnejoven.features.buy.domain;
 
-import com.iesam.carnejoven.features.promotions.Promotions;
-import com.iesam.carnejoven.features.user.User;
+import com.iesam.carnejoven.features.promotions.domain.Promotions;
+import com.iesam.carnejoven.features.user.domain.User;
 
 public class Buy {
     private final String id;
