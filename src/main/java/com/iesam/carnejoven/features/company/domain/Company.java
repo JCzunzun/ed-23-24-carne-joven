@@ -22,4 +22,12 @@ public class Company {
     public String getCif() {
         return cif;
     }
+
+    @Override
+    public String toString() {
+        return "Company\n" +
+                "id='" + id +
+                ", name='" + name +
+                ", cif='" + cif ;
+    }
 }

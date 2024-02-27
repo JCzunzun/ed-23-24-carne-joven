@@ -28,4 +28,13 @@ public class Promotions {
     public String getDiscount() {
         return discount;
     }
+
+    @Override
+    public String toString() {
+        return "Promotions\n" +
+                "id= " + id +
+                ", title= " + title +
+                ", description= " + description +
+                ", discount= " + discount ;
+    }
 }

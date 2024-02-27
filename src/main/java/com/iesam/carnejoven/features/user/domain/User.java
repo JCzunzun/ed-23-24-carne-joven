@@ -28,4 +28,13 @@ public class User {
     public String getAdress() {
         return adress;
     }
+
+    @Override
+    public String toString() {
+        return "User\n" +
+                "nif= " + nif +
+                ", name= " + name +
+                ", lastName= " + lastName +
+                ", adress= " + adress ;
+    }
 }

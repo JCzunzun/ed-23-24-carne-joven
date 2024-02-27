@@ -31,4 +31,13 @@ public class Buy {
     public User getUser() {
         return user;
     }
+
+    @Override
+    public String toString() {
+        return "Buy\n" +
+                "id='" + id +
+                ", dateBuy='" + dateBuy +
+                ", promotions=" + promotions +
+                ", user=" + user ;
+    }
 }
