@@ -3,9 +3,9 @@ package com.iesam.carnejoven.features.buy.domain;
 import com.iesam.carnejoven.features.buy.data.BuyDataRepository;
 
 public class GetBuyUseCase {
-    private final BuyDataRepository buyDataRepository;
+    private final BuyRepository buyDataRepository;
 
-    public GetBuyUseCase(BuyDataRepository buyDataRepository) {
+    public GetBuyUseCase(BuyRepository buyDataRepository) {
         this.buyDataRepository = buyDataRepository;
     }
 
