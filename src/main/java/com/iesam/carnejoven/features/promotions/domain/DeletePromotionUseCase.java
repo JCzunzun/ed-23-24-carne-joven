@@ -8,7 +8,8 @@ public class DeletePromotionUseCase {
     public DeletePromotionUseCase(PromotionDataRepository promotionDataRepository) {
         this.promotionDataRepository = promotionDataRepository;
     }
-    public void execute(String id){
+
+    public void execute(String id) {
         promotionDataRepository.deletePromotion(id);
     }
 }

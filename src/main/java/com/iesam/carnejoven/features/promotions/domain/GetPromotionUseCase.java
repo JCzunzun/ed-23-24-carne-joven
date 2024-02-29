@@ -8,7 +8,8 @@ public class GetPromotionUseCase {
     public GetPromotionUseCase(PromotionDataRepository promotionDataRepository) {
         this.promotionDataRepository = promotionDataRepository;
     }
-    public Promotions execute(String id){
+
+    public Promotions execute(String id) {
         return promotionDataRepository.obtainPromotion(id);
     }
 }

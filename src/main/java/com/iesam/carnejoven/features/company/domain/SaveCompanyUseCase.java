@@ -9,7 +9,7 @@ public class SaveCompanyUseCase {
         this.companyDataRepository = companyDataRepository;
     }
 
-    public void execute(Company company){
+    public void execute(Company company) {
         companyDataRepository.saveCompany(company);
     }
 }

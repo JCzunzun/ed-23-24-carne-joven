@@ -8,7 +8,8 @@ public class SavePromotionUseCase {
     public SavePromotionUseCase(PromotionDataRepository promotionDataRepository) {
         this.promotionDataRepository = promotionDataRepository;
     }
-    public void execute(Promotions promotions){
+
+    public void execute(Promotions promotions) {
         promotionDataRepository.savePromotion(promotions);
     }
 }

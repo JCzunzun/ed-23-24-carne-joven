@@ -13,9 +13,11 @@ import java.util.List;
 
 public class FileLocalDataSourceUser {
 
-    private String nameFile="Users.txt";
-    private Gson gson= new Gson();
-    private final Type type= new TypeToken<User>(){}.getType();
+    private String nameFile = "Users.txt";
+    private Gson gson = new Gson();
+    private final Type type = new TypeToken<User>() {
+    }.getType();
+
     public void saveUser(User user) {
         try {
             if (!Files.exists(Paths.get(nameFile))) {
@@ -29,6 +31,7 @@ public class FileLocalDataSourceUser {
             System.out.println("No se pudo guardar la compañia");
         }
     }
+
     public User obtainCompany(String id) {
         try {
             List<String> lines = Files.readAllLines(Paths.get(nameFile));

@@ -8,7 +8,8 @@ public class SaveUserUseCase {
     public SaveUserUseCase(UserDataRepository userDataRepositoryç) {
         this.userDataRepository = userDataRepositoryç;
     }
-    public void execute(User user){
+
+    public void execute(User user) {
         userDataRepository.saveUser(user);
     }
 }

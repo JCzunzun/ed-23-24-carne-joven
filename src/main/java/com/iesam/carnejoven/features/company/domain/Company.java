@@ -28,6 +28,6 @@ public class Company {
         return "Company\n" +
                 "id='" + id +
                 ", name='" + name +
-                ", cif='" + cif ;
+                ", cif='" + cif;
     }
 }

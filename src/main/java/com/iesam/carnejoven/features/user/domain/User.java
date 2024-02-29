@@ -35,6 +35,6 @@ public class User {
                 "nif= " + nif +
                 ", name= " + name +
                 ", lastName= " + lastName +
-                ", adress= " + adress ;
+                ", adress= " + adress;
     }
 }

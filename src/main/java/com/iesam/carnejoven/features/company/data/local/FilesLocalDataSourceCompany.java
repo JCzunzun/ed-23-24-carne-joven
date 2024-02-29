@@ -13,9 +13,11 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class FilesLocalDataSourceCompany {
-    private String nameFile="Companys.txt";
-    private Gson gson= new Gson();
-    private final Type type= new TypeToken<Company>(){}.getType();
+    private String nameFile = "Companys.txt";
+    private Gson gson = new Gson();
+    private final Type type = new TypeToken<Company>() {
+    }.getType();
+
     public void saveCompany(Company company) {
         try {
             if (!Files.exists(Paths.get(nameFile))) {
@@ -29,6 +31,7 @@ public class FilesLocalDataSourceCompany {
             System.out.println("No se pudo guardar la compañia");
         }
     }
+
     public Company obtainCompany(String id) {
         try {
             List<String> lines = Files.readAllLines(Paths.get(nameFile));

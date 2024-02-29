@@ -35,6 +35,6 @@ public class Promotions {
                 "id= " + id +
                 ", title= " + title +
                 ", description= " + description +
-                ", discount= " + discount ;
+                ", discount= " + discount;
     }
 }

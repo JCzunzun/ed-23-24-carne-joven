@@ -8,7 +8,8 @@ public class GetCompanyUseCase {
     public GetCompanyUseCase(CompanyRepository companyRepository) {
         this.companyRepository = companyRepository;
     }
-    public Company execute(String id){
+
+    public Company execute(String id) {
         return companyRepository.obtainCompany(id);
     }
 }

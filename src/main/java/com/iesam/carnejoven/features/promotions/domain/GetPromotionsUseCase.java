@@ -10,7 +10,8 @@ public class GetPromotionsUseCase {
     public GetPromotionsUseCase(PromotionDataRepository promotionDataRepository) {
         this.promotionDataRepository = promotionDataRepository;
     }
-    public ArrayList<Promotions> execute(){
+
+    public ArrayList<Promotions> execute() {
         return promotionDataRepository.obtainPromotions();
     }
 }

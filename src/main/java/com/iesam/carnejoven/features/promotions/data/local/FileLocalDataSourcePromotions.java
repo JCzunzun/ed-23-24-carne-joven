@@ -15,9 +15,11 @@ import java.util.Iterator;
 import java.util.List;
 
 public class FileLocalDataSourcePromotions {
-    private String nameFile="Promotions.txt";
-    private Gson gson= new Gson();
-    private final Type type= new TypeToken<Promotions>(){}.getType();
+    private String nameFile = "Promotions.txt";
+    private Gson gson = new Gson();
+    private final Type type = new TypeToken<Promotions>() {
+    }.getType();
+
     public void savePromotion(Promotions promotions) {
         try {
             if (!Files.exists(Paths.get(nameFile))) {
@@ -31,6 +33,7 @@ public class FileLocalDataSourcePromotions {
             System.out.println("No se pudo guardar la compra");
         }
     }
+
     public Promotions obtainPromotion(String id) {
         try {
             List<String> lines = Files.readAllLines(Paths.get(nameFile));
@@ -45,19 +48,21 @@ public class FileLocalDataSourcePromotions {
         }
         return null;
     }
-    public ArrayList<Promotions> obtainPromotions(){
-        ArrayList<Promotions> promotions= new ArrayList<>();
-        try{
-            List<String> lines=Files.readAllLines(Paths.get(nameFile));
-            for(String line:lines){
-                Promotions promotion=gson.fromJson(line, Promotions.class);
+
+    public ArrayList<Promotions> obtainPromotions() {
+        ArrayList<Promotions> promotions = new ArrayList<>();
+        try {
+            List<String> lines = Files.readAllLines(Paths.get(nameFile));
+            for (String line : lines) {
+                Promotions promotion = gson.fromJson(line, Promotions.class);
                 promotions.add(promotion);
             }
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Error al leer el archivo de promociones");
         }
         return promotions;
     }
+
     public void deletePromotion(String id) {
         try {
             ArrayList<Promotions> promotions = obtainPromotions();

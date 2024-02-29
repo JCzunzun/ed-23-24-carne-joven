@@ -6,10 +6,11 @@ import com.iesam.carnejoven.features.promotions.domain.Promotions;
 import java.util.ArrayList;
 
 public class PromotionDataRepository implements PromotionRepository {
-    private static PromotionDataRepository instancePromotion=null;
-    public static PromotionDataRepository newPromotionInstance(){
-        if(instancePromotion==null){
-            instancePromotion= new PromotionDataRepository();
+    private static PromotionDataRepository instancePromotion = null;
+
+    public static PromotionDataRepository newPromotionInstance() {
+        if (instancePromotion == null) {
+            instancePromotion = new PromotionDataRepository();
         }
         return instancePromotion;
     }

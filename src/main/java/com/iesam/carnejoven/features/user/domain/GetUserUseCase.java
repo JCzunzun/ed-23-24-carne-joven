@@ -9,7 +9,7 @@ public class GetUserUseCase {
         this.userDataRepository = userDataRepository;
     }
 
-    public User execute(String id){
+    public User execute(String id) {
         return userDataRepository.obtainUser(id);
     }
 }
